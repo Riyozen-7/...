@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Riyozen — Video Editor</title>
+<meta name="description" content="Explore Riyozen's video editing portfolio, featuring carefully crafted visual stories, engaging edits, and creative video projects.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Riyozen — Video Editor">
+<meta property="og:description" content="Explore Riyozen's video editing portfolio, featuring carefully crafted visual stories, engaging edits, and creative video projects.">
+<meta property="og:image" content="assets/posters/q4-inventory.webp"><!-- replace with a 1200x630 share image and absolute URL once deployed -->
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#work">Skip to work</a>
+<header class="nav">
+  <a class="mark" href="#top" aria-label="riyozen, back to top">riyozen</a>
+  <nav aria-label="Primary"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <p class="micro">INDEPENDENT VIDEO EDITOR · AVAILABLE WORLDWIDE</p>
+    <h1>Good videos.<br>Made with intention.</h1>
+    <p class="lede">I'm Riyozen, a freelance video editor focused on creating engaging, carefully crafted videos for creators and businesses.</p>
+    <p class="links"><a href="#work">View selected work ↓</a><a href="#contact">Get in touch ↗</a></p>
+  </section>
+
+  <section id="work" class="work" aria-labelledby="work-h">
+    <div class="work-head">
+      <h2 id="work-h">Selected work</h2>
+      <p>A collection of projects I've worked on.</p>
+    </div>
+    <ul class="grid" id="grid"></ul>
+  </section>
+
+  <section id="about" class="about" aria-labelledby="about-h">
+    <h2 id="about-h">A little about me.</h2>
+    <div class="about-body">
+      <p>I'm a freelance video editor who enjoys turning raw footage into clear, engaging visual stories.</p>
+      <p>I focus on thoughtful pacing, clean presentation, sound, and the small details that make an edit feel complete.</p>
+      <p>I'm interested in working with creators and businesses who care about the content they put into the world.</p>
+      <p><a class="ul" href="#contact">Have a project in mind? Let's talk ↗</a></p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h">Have something in mind?</h2>
+    <p>If you have a project you'd like to discuss, send me an email. Tell me a little about what you're working on, and we can take it from there.</p>
+    <p class="ctas"><a class="cta" href="mailto:habiburrashid498@gmail.com?subject=Video%20editing%20project">Email Riyozen ↗</a><a class="cta" href="https://wa.me/8801880471287?text=Hi%20Riyozen%2C%20I%27d%20like%20to%20talk%20about%20a%20video%20project." target="_blank" rel="noopener">WhatsApp ↗</a></p>
+    <p class="addr"><span id="addr">habiburrashid498@gmail.com</span> <button type="button" id="copy">Copy</button><br><a class="wa" href="https://wa.me/8801880471287?text=Hi%20Riyozen%2C%20I%27d%20like%20to%20talk%20about%20a%20video%20project." target="_blank" rel="noopener">WhatsApp +880 1880 471287</a><span id="copied" class="sr" role="status"></span></p>
+  </section>
+</main>
+
+<footer class="foot">
+  <a class="mark" href="#top">riyozen</a>
+  <a href="mailto:habiburrashid498@gmail.com">habiburrashid498@gmail.com</a>
+  <nav aria-label="Footer"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <p>Available for selected projects. © <span id="yr"></span> Riyozen</p>
+</footer>
+
+<dialog id="viewer" aria-label="Video viewer">
+  <button type="button" class="close" id="close" aria-label="Close video">Close ✕</button>
+  <div class="frame" id="frame"><video id="player" controls playsinline preload="none"></video></div>
+  <div class="cap"><h3 id="vt"></h3><p id="vd"></p></div>
+</dialog>
+<script src="projects.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
